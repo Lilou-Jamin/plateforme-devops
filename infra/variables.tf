@@ -5,3 +5,8 @@ variable "nom_cluster" {
 variable "version_argocd" {
   type = string
 }
+
+variable "depot" {
+  description = "URL HTTPS du dépôt Git"
+  type        = string
+}
