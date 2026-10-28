@@ -1,6 +1,15 @@
 module "cluster" {
   source = "./modules/cluster"
-  nom    = var.nom_cluster
+  nom    = var.nom
+}
+
+provider "helm" {
+  kubernetes = {
+    host                   = module.cluster.endpoint
+    client_certificate     = module.cluster.client_certificate
+    client_key             = module.cluster.client_key
+    cluster_ca_certificate = module.cluster.cluster_ca_certificate
+  }
 }
 
 module "argocd" {
