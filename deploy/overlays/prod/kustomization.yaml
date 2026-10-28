@@ -5,8 +5,8 @@ resources:
   - ../../base
 images:
   - name: api              
-    newName: api
-    newTag: initial         
+    newName: ghcr.io/lilou-jamin/plateforme-devops
+    newTag: fe6c1e97         
 replicas:
   - name: api
     count: 2 
