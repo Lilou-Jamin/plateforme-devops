@@ -5,6 +5,6 @@ terraform {
 }
 
 resource "kind_cluster" "this" {
-  name           = var.nom
+  name           = var.nom_cluster
   wait_for_ready = true
 }

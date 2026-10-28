@@ -1,6 +1,6 @@
 module "cluster" {
   source = "./modules/cluster"
-  nom    = var.nom
+  nom_cluster    = var.nom_cluster
 }
 
 provider "helm" {
