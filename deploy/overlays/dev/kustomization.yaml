@@ -6,4 +6,4 @@ resources:
 images:
 - name: api
   newName: ghcr.io/lilou-jamin/plateforme-devops
-  newTag: fe6c1e97
+  newTag: dfd942b0
